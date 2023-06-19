@@ -2,10 +2,10 @@ import { useParams } from 'react-router-dom';
 import Container from '../../Components/Container/Container';
 import { useEffect, useState } from 'react';
 import { API_URL } from '../../config';
+import { v4 as uuid } from 'uuid';
 
 
 const UserPage = () => {
-
     // console.log(useParams())
     const params = useParams();
     // console.log(params.id)
@@ -19,6 +19,7 @@ const UserPage = () => {
       .then(res => res.json())
       .then(data => {
         setUser(data)
+        console.log(data)
       })
     }, [id])
 
@@ -37,6 +38,11 @@ const UserPage = () => {
         <div>Website: {user.website}</div>
         <div>Company: {user.company.name}</div>
       </div>
+      <h2>Albums of {user.name}:</h2>
+      <ul>
+        {user.albums.map(album => <li key={uuid()}>{album.title}</li>)}
+      </ul>
+   
     </Container>
   )
 }
