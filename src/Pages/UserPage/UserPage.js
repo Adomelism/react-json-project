@@ -35,14 +35,14 @@ const UserPage = () => {
       <div>
         <h1>Information about {user.name}</h1>
         <div>Nickname: {user.username}</div>
-        <div>Email: {user.email}</div>
+        <div>Email: <a href={`mailto:${user.email}`}>{user.email}</a></div>
         <div>Address: 
           <Link to={`https://www.google.com/maps/search/?api=1&query=${user.address.geo.lat},${user.address.geo.lng}`}>
               {user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}
             </Link> 
         </div>
-        <div>Phone: {user.phone}</div>
-        <div>Website: {user.website}</div>
+        <div>Phone: <a href={`tel:${user.phone}`}>{user.phone}</a></div>
+        <div>Website: <a href={`https://${user.website}`} target='_blank' rel='noreferrer'>{user.website}</a></div>
         <div>Company: {user.company.name}</div>
       </div>
 
