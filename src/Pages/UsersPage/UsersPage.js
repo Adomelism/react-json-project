@@ -10,10 +10,11 @@ const UsersPage = () => {
 
     useEffect(() => {
     
-        fetch(API_URL + '/users')
+        fetch(API_URL + '/users?_embed=posts')
             .then(res => res.json())
             .then(data => {
-                setUsers(data)         
+                setUsers(data)     
+                // console.log(data)    
         })
     }, [])
     
@@ -24,7 +25,7 @@ const UsersPage = () => {
         <ul>
             {users.map(user => (
                 <li key={user.id}>
-                 <Link to ={`/users/${user.id}`}>{user.name}</Link>
+                 <Link to ={`/users/${user.id}`}>{user.name} (Posts: {user.posts.length})</Link>
                 </li>))}
             
         </ul>
