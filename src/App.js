@@ -9,6 +9,7 @@ import PostPage from './Pages/PostPage/PostPage';
 import CommentsPage from './Pages/CommentsPage/CommentsPage';
 import CommentPage from './Pages/CommentPage/CommentPage';
 import CreatePost from './Pages/CreatePost/CreatePost';
+import CreateUser from './Pages/CreateUser/CreateUser';
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
       <Routes>
             <Route path='/UsersPage' element={<UsersPage />} />
             <Route path='/users/:id' element={<UserPage />} />
+            <Route path='/users/create' element={<CreateUser />} />
             <Route path='/AlbumsPage' element={<AlbumsPage />} />
             <Route path='/albums/:id' element={<AlbumPage />} />
             <Route path='/PostsPage' element={<PostsPage />} />

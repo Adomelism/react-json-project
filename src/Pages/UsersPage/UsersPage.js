@@ -21,6 +21,7 @@ const UsersPage = () => {
     
   return (
     <Container>
+        <Link to='/users/create'>Create a new user</Link>
         <h1>Users:</h1>
         <ul>
             {users.map(user => (
@@ -28,6 +29,8 @@ const UsersPage = () => {
                  <Link to ={`/users/${user.id}`}>{user.name} (Posts: {user.posts.length})</Link>
                 </li>))} 
         </ul>
+        
+
     </Container>
   )
 }
