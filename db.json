@@ -539,6 +539,24 @@
       "id": 100,
       "title": "at nam consequatur ea labore ea harum",
       "body": "cupiditate quo est a modi nesciunt soluta\nipsa voluptas error itaque dicta in\nautem qui minus magnam et distinctio eum\naccusamus ratione error aut"
+    },
+    {
+      "title": "pavadinimas",
+      "body": "aprasymas",
+      "userId": 2,
+      "id": 101
+    },
+    {
+      "title": "a",
+      "body": "a",
+      "userId": "7",
+      "id": 102
+    },
+    {
+      "title": "a",
+      "body": "b",
+      "userId": 3,
+      "id": 103
     }
   ],
   "comments": [

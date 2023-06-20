@@ -8,6 +8,7 @@ import PostsPage from './Pages/PostsPage/PostsPage';
 import PostPage from './Pages/PostPage/PostPage';
 import CommentsPage from './Pages/CommentsPage/CommentsPage';
 import CommentPage from './Pages/CommentPage/CommentPage';
+import CreatePost from './Pages/CreatePost/CreatePost';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path='/albums/:id' element={<AlbumPage />} />
             <Route path='/PostsPage' element={<PostsPage />} />
             <Route path='/posts/:id' element={<PostPage />} />
+            <Route path='/posts/create' element={<CreatePost />} />
             <Route path='/CommentsPage' element={<CommentsPage />} />
             <Route path='/comments/:id' element={<CommentPage />} />
 
