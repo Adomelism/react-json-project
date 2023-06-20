@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import Container from '../../Components/Container/Container';
 import { API_URL } from '../../config';
-import { v4 as uuid } from 'uuid';
 import { Link } from 'react-router-dom';
 
 const AlbumsPage = () => {

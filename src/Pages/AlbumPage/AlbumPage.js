@@ -31,7 +31,7 @@ const AlbumPage = () => {
       <div>
         <h1>Title: {album.title}</h1>
         <h2> Author: {album.user.name}</h2>
-        <img src={album.photos[id].thumbnailUrl}></img>
+        <img src={album.photos[id].thumbnailUrl} alt="album"></img>
       </div>
     </Container>
   )
