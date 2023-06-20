@@ -2,6 +2,8 @@ import './App.css';
 import { Routes, Route, Link, NavLink } from 'react-router-dom';
 import UsersPage from './Pages/UsersPage/UsersPage';
 import UserPage from './Pages/UserPage/UserPage';
+import AlbumsPage from './Pages/AlbumsPage/AlbumsPage';
+import AlbumPage from './Pages/AlbumPage/AlbumPage';
 
 function App() {
   return (
@@ -18,7 +20,7 @@ function App() {
           </li>
 
           <li className='nav-item'>
-            <NavLink to='/UserPage' className='nav-link'>User</NavLink>
+            <NavLink to='/AlbumsPage' className='nav-link'>Albums</NavLink>
           </li>
         </ul>
       </nav>
@@ -26,15 +28,17 @@ function App() {
       <Routes>
             <Route path='/UsersPage' element={<UsersPage />} />
             <Route path='/users/:id' element={<UserPage />} />
+            <Route path='/AlbumsPage' element={<AlbumsPage />} />
+            <Route path='/albums/:id' element={<AlbumPage />} />
 
             <Route path='/' element={ 
-              <div>
+              <div className='content'>
                 <h1>HomePage</h1>
                 <p>This is Home Page under construction...</p>
               </div>
               } />
             <Route path='*' element={
-              <div>
+              <div className='content'>
                 <h1>404 error. Page not found.</h1>
                 <Link to='/'>Go Back to HomePage</Link>
               </div>
