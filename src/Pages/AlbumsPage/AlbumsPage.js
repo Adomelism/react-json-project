@@ -20,7 +20,7 @@ const AlbumsPage = () => {
     <Container>
       {albums.map(album => (
         <Link key={album.id} to={`/albums/${album.id}`}>
-            <h1>Title: {album.title}</h1>
+            <h1>ID: {album.id} Title: {album.title}</h1>
             <h2>Author: {album.user.name}</h2>
             <img src={album.photos[0].thumbnailUrl} alt='album'></img>
         </Link>

@@ -26,8 +26,7 @@ const UsersPage = () => {
             {users.map(user => (
                 <li key={user.id}>
                  <Link to ={`/users/${user.id}`}>{user.name} (Posts: {user.posts.length})</Link>
-                </li>))}
-            
+                </li>))} 
         </ul>
     </Container>
   )

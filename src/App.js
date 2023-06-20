@@ -4,6 +4,10 @@ import UsersPage from './Pages/UsersPage/UsersPage';
 import UserPage from './Pages/UserPage/UserPage';
 import AlbumsPage from './Pages/AlbumsPage/AlbumsPage';
 import AlbumPage from './Pages/AlbumPage/AlbumPage';
+import PostsPage from './Pages/PostsPage/PostsPage';
+import PostPage from './Pages/PostPage/PostPage';
+import CommentsPage from './Pages/CommentsPage/CommentsPage';
+import CommentPage from './Pages/CommentPage/CommentPage';
 
 function App() {
   return (
@@ -22,6 +26,14 @@ function App() {
           <li className='nav-item'>
             <NavLink to='/AlbumsPage' className='nav-link'>Albums</NavLink>
           </li>
+
+          <li className='nav-item'>
+            <NavLink to='/PostsPage' className='nav-link'>Posts</NavLink>
+          </li>
+
+          <li className='nav-item'>
+            <NavLink to='/CommentsPage' className='nav-link'>Comments</NavLink>
+          </li>
         </ul>
       </nav>
       
@@ -30,6 +42,10 @@ function App() {
             <Route path='/users/:id' element={<UserPage />} />
             <Route path='/AlbumsPage' element={<AlbumsPage />} />
             <Route path='/albums/:id' element={<AlbumPage />} />
+            <Route path='/PostsPage' element={<PostsPage />} />
+            <Route path='/posts/:id' element={<PostPage />} />
+            <Route path='/CommentsPage' element={<CommentsPage />} />
+            <Route path='/comments/:id' element={<CommentPage />} />
 
             <Route path='/' element={ 
               <div className='content'>
