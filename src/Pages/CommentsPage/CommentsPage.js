@@ -19,6 +19,7 @@ useEffect(() => {
   return (
 
     <Container>
+        <Link to='/comments/create'>Create a new comment</Link>
         <ul>
           {comments.map(comment => <li><Link to={`/comments/${comment.id}`}>{comment.name}</Link></li>)}
         </ul>

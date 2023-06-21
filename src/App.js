@@ -11,6 +11,7 @@ import CommentPage from './Pages/CommentPage/CommentPage';
 import CreatePost from './Pages/CreatePost/CreatePost';
 import CreateUser from './Pages/CreateUser/CreateUser';
 import CreateAlbum from './Pages/CreateAlbum/CreateAlbum';
+import CreateComment from './Pages/CreateComment/CreateComment';
 
 function App() {
   return (
@@ -52,6 +53,8 @@ function App() {
             <Route path='/posts/create' element={<CreatePost />} />
             <Route path='/CommentsPage' element={<CommentsPage />} />
             <Route path='/comments/:id' element={<CommentPage />} />
+            <Route path='/comments/create' element={<CreateComment />} />
+
 
             <Route path='/' element={ 
               <div className='content'>
