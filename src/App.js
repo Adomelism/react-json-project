@@ -14,6 +14,7 @@ import CreateAlbum from './Pages/CreateAlbum/CreateAlbum';
 import CreateComment from './Pages/CreateComment/CreateComment';
 import PhotosPage from './Pages/PhotosPage/PhotosPage';
 import PhotoPage from './Pages/PhotoPage/PhotoPage';
+import CreatePhoto from './Pages/CreatePhoto/CreatePhoto';
 
 function App() {
   return (
@@ -62,6 +63,8 @@ function App() {
             <Route path='/comments/create' element={<CreateComment />} />
             <Route path='/PhotosPage' element={<PhotosPage />} />
             <Route path='/photos/:id' element={<PhotoPage />} />
+            <Route path='/photos/create' element={<CreatePhoto />} />
+
 
 
 

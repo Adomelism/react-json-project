@@ -19,6 +19,9 @@ const PhotosPage = () => {
 
   return (
     <Container>
+      <div>
+        <Link to='/photos/create'>Add a new photo</Link>
+      </div>
         {photos.map(photo => <Link to={`/photos/${photo.id}`} key={photo.id}><img src={photo.thumbnailUrl} alt='art'></img></Link>)}
     </Container>
   )
