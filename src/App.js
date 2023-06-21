@@ -12,6 +12,8 @@ import CreatePost from './Pages/CreatePost/CreatePost';
 import CreateUser from './Pages/CreateUser/CreateUser';
 import CreateAlbum from './Pages/CreateAlbum/CreateAlbum';
 import CreateComment from './Pages/CreateComment/CreateComment';
+import PhotosPage from './Pages/PhotosPage/PhotosPage';
+import PhotoPage from './Pages/PhotoPage/PhotoPage';
 
 function App() {
   return (
@@ -38,6 +40,10 @@ function App() {
           <li className='nav-item'>
             <NavLink to='/CommentsPage' className='nav-link'>Comments</NavLink>
           </li>
+
+          <li className='nav-item'>
+            <NavLink to='/PhotosPage' className='nav-link'>Photos</NavLink>
+          </li>
         </ul>
       </nav>
       
@@ -54,6 +60,9 @@ function App() {
             <Route path='/CommentsPage' element={<CommentsPage />} />
             <Route path='/comments/:id' element={<CommentPage />} />
             <Route path='/comments/create' element={<CreateComment />} />
+            <Route path='/PhotosPage' element={<PhotosPage />} />
+            <Route path='/photos/:id' element={<PhotoPage />} />
+
 
 
             <Route path='/' element={ 

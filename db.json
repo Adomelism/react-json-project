@@ -3693,24 +3693,10 @@
   "photos": [
     {
       "albumId": 21,
-      "id": 1001,
-      "title": "velit corrupti odio suscipit rerum",
-      "url": "https://via.placeholder.com/600/a91759",
-      "thumbnailUrl": "https://via.placeholder.com/150/a91759"
-    },
-    {
-      "albumId": 21,
       "id": 1002,
       "title": "eveniet expedita est est amet doloremque facilis velit at",
       "url": "https://via.placeholder.com/600/a8d0f4",
       "thumbnailUrl": "https://via.placeholder.com/150/a8d0f4"
-    },
-    {
-      "albumId": 21,
-      "id": 1003,
-      "title": "accusantium qui aperiam ipsum ipsam vel dolores alias",
-      "url": "https://via.placeholder.com/600/71cb63",
-      "thumbnailUrl": "https://via.placeholder.com/150/71cb63"
     },
     {
       "albumId": 21,
