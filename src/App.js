@@ -10,6 +10,7 @@ import CommentsPage from './Pages/CommentsPage/CommentsPage';
 import CommentPage from './Pages/CommentPage/CommentPage';
 import CreatePost from './Pages/CreatePost/CreatePost';
 import CreateUser from './Pages/CreateUser/CreateUser';
+import CreateAlbum from './Pages/CreateAlbum/CreateAlbum';
 
 function App() {
   return (
@@ -45,6 +46,7 @@ function App() {
             <Route path='/users/create' element={<CreateUser />} />
             <Route path='/AlbumsPage' element={<AlbumsPage />} />
             <Route path='/albums/:id' element={<AlbumPage />} />
+            <Route path='/albums/create' element={<CreateAlbum />} />
             <Route path='/PostsPage' element={<PostsPage />} />
             <Route path='/posts/:id' element={<PostPage />} />
             <Route path='/posts/create' element={<CreatePost />} />

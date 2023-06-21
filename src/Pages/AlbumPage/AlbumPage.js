@@ -14,7 +14,7 @@ const AlbumPage = () => {
   const [albumDeleted, setAlbumDeleted] = useState(false)
 
   useEffect(() => {
-    fetch(API_URL + `/albums/${id}?_expand=user&_embed=photos`)
+    fetch(API_URL + `/albums/${id}?_expand=user`)
     .then(res => res.json())
     .then(data => {
       // console.log(data)
@@ -44,7 +44,7 @@ const AlbumPage = () => {
          <div>
          <h1>Title: {album.title}</h1>
          <h2> Author: {album.user.name}</h2>
-         <img src={album.photos[id].thumbnailUrl} alt="album"></img>
+         {/* <img src={album.photos[id].thumbnailUrl} alt="album"></img> */}
        </div>
       ) }
         <button onClick={deleteHandler}>Delete</button>
