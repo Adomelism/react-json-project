@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Container from '../../Components/Container/Container';
 import { API_URL } from '../../config';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const AlbumsPage = () => {
 
@@ -9,11 +10,15 @@ const AlbumsPage = () => {
 
   useEffect(() => {
 
-    fetch(API_URL + '/albums?_expand=user')
-    .then(res => res.json())
-    .then(data => {
-      setAlbums(data)
-  }) 
+  //   fetch(API_URL + '/albums?_expand=user')
+  //   .then(res => res.json())
+  //   .then(data => {
+  //     setAlbums(data)
+  // }) 
+
+      axios.get(`${API_URL}/albums?_expand=user`)
+      .then(res => setAlbums(res.data))
+      .catch(err => console.log(err.message))
   }, [])
 
   return (
